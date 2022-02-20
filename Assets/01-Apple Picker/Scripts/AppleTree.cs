@@ -30,7 +30,7 @@ public class AppleTree : MonoBehaviour
 
        apple.transform.position = transform.position;
 
-       Invoke( "DropeAppple", secondBetweenAppleDrops);
+       Invoke( "DropApple", secondBetweenAppleDrops);
     }
 
     // Update is called once per frame
