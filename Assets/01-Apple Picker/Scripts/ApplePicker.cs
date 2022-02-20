@@ -8,10 +8,10 @@ public class ApplePicker : MonoBehaviour
     public int numBaskets = 3;
     public float basketBottomY = -14f;
     public float basketSpacing = 2f;
-   
+
     void Start()
     {
-    for (int i=0; i<numBaskets; i++)
+        for (int i = 0; i < numBaskets; i++)
         {
             GameObject tBasketGo = Instantiate(basketPrefab) as GameObject;
             Vector3 pos = Vector3.zero;
@@ -23,6 +23,6 @@ public class ApplePicker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
