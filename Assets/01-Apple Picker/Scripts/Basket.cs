@@ -11,8 +11,8 @@ public class Basket : MonoBehaviour
 
     void Start()
     {
-        // Find a reference to the HighScore 
-        GameObject scoreGO = GameObject.Find("HighScore");
+        // Find a reference to the PlayerScore 
+        GameObject scoreGO = GameObject.Find("PlayerScore");
 
         // Get the Text Component of that GameObject
         scoreGT = scoreGO.GetComponent<Text>();
@@ -39,7 +39,7 @@ public class Basket : MonoBehaviour
         pos.x = mousePos3D.x;
         this.transform.position = pos;
     }
-    void OncollisionEnter( Collision coll )
+    void OnCollisionEnter( Collision coll )
     {
         //Find out what hit this basket
         GameObject collideWith = coll.gameObject;
